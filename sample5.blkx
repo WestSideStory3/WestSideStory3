@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram>
+	<block instName="init" type="Mux" x="10" y="0" />
+	<block instName="b1" type="Add" x="10" y="200" />
+	<block instName="b2" type="Sub" x="210" y="100" />
+	<block instName="b3" type="Int" x="110" y="400" />
+	<block instName="b4" type="Int" x="210" y="400" />
+	<block instName="b5" type="Int" x="300" y="400" />
+	<block instName="b6" type="Int" x="400" y="400" />
+	<block instName="b7" type="Int" x="500" y="400" />
+	<connection from="b1.0" to="b2.0" />
+	<connection from="b2.0" to="b3.0" />
+	<connection from="b3.0" to="b1.0" />
+	<connection from="b7.0" to="b4.0" />
+	<implement from="b1" to="b2" />
+	<implement from="b1" to="b3" />
+	<implement from="b2" to="b3" />
+	<implement from="b5" to="b6" />
+	<implement from="b6" to="b7" />
+	<implement from="b7" to="b3" />
+</diagram>
